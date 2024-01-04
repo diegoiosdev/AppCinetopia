@@ -14,7 +14,7 @@ internal class MoviesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPurple
+        view.backgroundColor = UIColor(named: "BackgroundColor")
         navigationSetup()
         addSubviews()
         setupConstrains()
@@ -34,7 +34,7 @@ internal class MoviesViewController: UIViewController {
     }
     
     private func navigationSetup() {
-        title = "Filmes populares"
+        title = "Filmes Populares"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor : UIColor.white]
@@ -59,6 +59,8 @@ extension MoviesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let details = DetailViewController(movie: movies[indexPath.row])
+        navigationController?.pushViewController(details, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

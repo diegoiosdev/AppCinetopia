@@ -51,7 +51,7 @@ internal class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPurple
+        view.backgroundColor = UIColor(named: "BackgroundColor")
         addSubviews()
         setupConstrains()
     }

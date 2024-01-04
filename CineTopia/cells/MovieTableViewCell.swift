@@ -38,7 +38,7 @@ import UIKit
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubviews()
         setupConstrains()
-        backgroundColor = .systemPurple
+        backgroundColor = UIColor(named: "BackgroundColor")
     }
     
     required init?(coder: NSCoder) {
