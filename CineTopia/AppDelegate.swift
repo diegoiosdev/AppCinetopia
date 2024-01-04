@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  CineTopia
-//
-//  Created by Diego Fernando on 1/2/24.
-
 import UIKit
 
 @main
