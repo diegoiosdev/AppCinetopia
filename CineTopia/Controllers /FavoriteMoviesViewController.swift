@@ -1,29 +1,36 @@
-//
-//  FovariteMoviesViewController.swift
-//  CineTopia
-//
-//  Created by Diego Fernando on 1/5/24.
-//
-
 import UIKit
 
-class FovariteMoviesViewController: UIViewController {
+internal class FavoriteMoviesViewController: UIViewController {
+    
+    private lazy var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .yellow
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        return collectionView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor(named: "BackgroundColor")
+        addSubviews()
+        setupConstrains()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
-    */
-
+    
+    private func addSubviews() {
+        view.addSubview(collectionView)
+    }
+    
+    private func setupConstrains() {
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        ])
+    }
 }
