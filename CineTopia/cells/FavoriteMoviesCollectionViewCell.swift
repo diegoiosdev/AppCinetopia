@@ -15,10 +15,10 @@ internal class FavoriteMoviesCollectionViewCell: UICollectionViewCell {
     private lazy var labelMovie: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
+        label.textColor = .white
         label.font = .systemFont(ofSize: 12, weight: .bold)
         label.textAlignment = .center
-        label.numberOfLines = 0
+        label.numberOfLines = 1
         return label
     }()
     
@@ -37,7 +37,6 @@ internal class FavoriteMoviesCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor(named: "BackgroundColor")
         addSubviews()
         setupConstrains()
     }
