@@ -16,7 +16,7 @@ internal class FavoriteMoviesCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
-        label.font = .systemFont(ofSize: 12, weight: .bold)
+        label.font = .systemFont(ofSize: 12, weight: .medium)
         label.textAlignment = .center
         label.numberOfLines = 1
         return label

@@ -20,6 +20,7 @@
 		2AC2DAD82B46EAA70096066C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2DAD72B46EAA70096066C /* HomeViewController.swift */; };
 		2AC2DADD2B46EB2B0096066C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2DADC2B46EB2B0096066C /* Models.swift */; };
 		2AC2DAE12B46EBA30096066C /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2DAE02B46EBA30096066C /* MovieTableViewCell.swift */; };
+		2AEEB7C52B4F1B1000EC89D7 /* TabBarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEEB7C42B4F1B1000EC89D7 /* TabBarHome.swift */; };
 		8D1691685F39A4F56F7F200A /* Pods_CineTopia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BDA79ED7CF769FDB2E9FA8D /* Pods_CineTopia.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		2AC2DAD72B46EAA70096066C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2AC2DADC2B46EB2B0096066C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		2AC2DAE02B46EBA30096066C /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		2AEEB7C42B4F1B1000EC89D7 /* TabBarHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHome.swift; sourceTree = "<group>"; };
 		7BDA79ED7CF769FDB2E9FA8D /* Pods_CineTopia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineTopia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EFE8827A5EDE744F315D1D /* Pods-CineTopia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineTopia.debug.xcconfig"; path = "Target Support Files/Pods-CineTopia/Pods-CineTopia.debug.xcconfig"; sourceTree = "<group>"; };
 		F4FC6F54182DB88F1B953BCF /* Pods-CineTopia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineTopia.release.xcconfig"; path = "Target Support Files/Pods-CineTopia/Pods-CineTopia.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				2AC2DAC82B46E9A30096066C /* MoviesViewController.swift */,
 				2AB5115F2B47020E00EA3645 /* DetailViewController.swift */,
 				2A19E6892B485D9E00056895 /* FavoriteMoviesViewController.swift */,
+				2AEEB7C42B4F1B1000EC89D7 /* TabBarHome.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				2A101B2E2B44753500BEAE6B /* AppDelegate.swift in Sources */,
 				2A101B302B44753500BEAE6B /* SceneDelegate.swift in Sources */,
 				2AC2DAE12B46EBA30096066C /* MovieTableViewCell.swift in Sources */,
+				2AEEB7C52B4F1B1000EC89D7 /* TabBarHome.swift in Sources */,
 				2A19E68A2B485D9E00056895 /* FavoriteMoviesViewController.swift in Sources */,
 				2AC2DAD82B46EAA70096066C /* HomeViewController.swift in Sources */,
 				2A19E68E2B487E6100056895 /* FavoriteMoviesCollectionViewCell.swift in Sources */,
