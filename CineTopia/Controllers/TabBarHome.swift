@@ -1,6 +1,6 @@
 import UIKit
 
- internal class TabBarHome: UITabBarController {
+class TabBarHome: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

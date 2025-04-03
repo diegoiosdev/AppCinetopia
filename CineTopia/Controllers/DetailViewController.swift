@@ -1,6 +1,6 @@
 import UIKit
 
- internal class DetailViewController: UIViewController {
+  class DetailViewController: UIViewController {
 
     var movie: Movie
     
@@ -56,7 +56,7 @@ import UIKit
         return stack
     }()
     
-    internal func configureCell(movie: Movie) {
+     func configureCell(movie: Movie) {
         imageViewDetail.image = UIImage(named: movie.image)
         labelMovieRate.text = "Classificação dos usuários: \(Double(movie.rate))"
         labelMovieDescription.text = movie.synopsis
@@ -66,7 +66,7 @@ import UIKit
         view.addSubview(stackView)
     }
     
-    private func setupConstrains() {
+     func setupConstrains() {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),

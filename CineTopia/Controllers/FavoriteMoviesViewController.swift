@@ -1,6 +1,6 @@
 import UIKit
 
-internal class FavoriteMoviesViewController: UIViewController {
+ class FavoriteMoviesViewController: UIViewController {
     
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()

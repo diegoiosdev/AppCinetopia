@@ -1,7 +1,7 @@
 import UIKit
 import Kingfisher
 
-internal class FavoriteMoviesCollectionViewCell: UICollectionViewCell {
+ class FavoriteMoviesCollectionViewCell: UICollectionViewCell {
     
     private lazy var imageViewCollection: UIImageView = {
         let imageView = UIImageView()

@@ -20,7 +20,7 @@ internal class HomeViewController: UIViewController {
     private lazy var labelHome: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "O lugar ideial para buscar, salvar e organizar seus filmes favoritos!"
+        label.text = "O lugar ideal para buscar, salvar e organizar seus filmes favoritos!"
         label.textColor = .white
         label.numberOfLines = 0
         label.textAlignment = .center

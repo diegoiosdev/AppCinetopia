@@ -1,7 +1,7 @@
 
 import UIKit
 
- internal class FavoriteCollectionReusableView: UICollectionReusableView {
+  class FavoriteCollectionReusableView: UICollectionReusableView {
     
     private lazy var headerLabel: UILabel = {
         let label = UILabel()

@@ -1,6 +1,6 @@
 import UIKit
 
- internal class MovieTableViewCell: UITableViewCell {
+  class MovieTableViewCell: UITableViewCell {
     
     private lazy var imageViewMovie: UIImageView = {
         let imageView = UIImageView()
@@ -28,7 +28,7 @@ import UIKit
         return label
     }()
     
-    internal func configureCell(movie: Movie) {
+     func configureCell(movie: Movie) {
         labelMovie.text = movie.title
         imageViewMovie.image = UIImage(named: movie.image)
         labelMovieRealese.text = "Lançamento: \(movie.releaseDate)"
